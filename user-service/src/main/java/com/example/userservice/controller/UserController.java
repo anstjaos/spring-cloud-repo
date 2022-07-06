@@ -47,6 +47,7 @@ public class UserController {
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
         UserDto userDto = mapper.map(requestUser, UserDto.class);
+
         userService.createUser(userDto);
 
         ResponseUser responseUser = mapper.map(userDto, ResponseUser.class);
