@@ -4,9 +4,13 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        native:
+          search-locations: file://${user.home}/document/spring-cloud-yaml-repo
         git:
 #          uri: file:///Users/nhn/document/spring-cloud-yaml-repo
           uri: https://github.com/anstjaos/spring-cloud-yaml-repo
