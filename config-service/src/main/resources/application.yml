@@ -8,4 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/nhn/document/spring-cloud-yaml-repo
+#          uri: file:///Users/nhn/document/spring-cloud-yaml-repo
+          uri: https://github.com/anstjaos/spring-cloud-yaml-repo
+          default-label: master
